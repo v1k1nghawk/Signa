@@ -1,12 +1,12 @@
 # Signa
 
-_NAME:_ Signa - File fingerprinting
+_NAME:_ Signa - file fingerprinting
 
 
-_SYNOPSIS:_ **Signa** -i <ins>INPUTFILE</ins> -o <ins>OUTPUTFILE</ins> [-bs <ins>BS</ins>] [--verbose <ins>FLAG</ins>]
+_SYNOPSIS:_ **Signa** -i <ins>INPUTFILE</ins> -o <ins>OUTPUTFILE</ins> [-bs <ins>BS</ins>] [-v <ins>FLAG</ins>]
 
 
-_DESCRIPTION:_ Creates a MD5-based file's fingerprint. For each <ins>BS</ins>Mb block of the <ins>INPUTFILE</ins> the program calculates the MD5 hash value and stores it in the <ins>OUTPUTFILE</ins>. Last <ins>INPUTFILE</ins>'s data block padded with zeroes to the block size if needed before hashing. So the <ins>OUTPUTFILE</ins> contains <ins>BS</ins> MD5 hash values, one for each <ins>OUTPUTFILE</ins>'s data block.
+_DESCRIPTION:_ Checksum calculator, creates a MD5-based file's fingerprint. For each <ins>BS</ins> megabyte block of the <ins>INPUTFILE</ins> the program calculates the MD5 hash value and stores it in the <ins>OUTPUTFILE</ins> (last <ins>INPUTFILE</ins>'s data block padded with zeroes to the block size if needed before hashing). So the <ins>OUTPUTFILE</ins> contains <ins>BS</ins> MD5 hash values, one for each <ins>OUTPUTFILE</ins>'s data block.
 
 
 **-i**, **--input** <ins>INPUTFILE</ins><br />
